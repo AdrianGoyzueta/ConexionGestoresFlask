@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 db = psycopg2.connect(
     host="localhost",
+    port=5432,
     user="postgres",
     password="",
     database="flask"
@@ -54,4 +55,3 @@ def actualizar():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
